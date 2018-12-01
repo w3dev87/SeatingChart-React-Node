@@ -1,0 +1,14 @@
+@import '../modules/colors';
+
+.canvas-controller {
+  position: fixed;
+  text-align: center;
+  top: 100px;
+  right: 50px;
+  width: 250px;
+  min-height: 100px;
+  background: $light-gray;
+  border-radius: 5px;
+  z-index: 3;
+  padding: 15px;
+}

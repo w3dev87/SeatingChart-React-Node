@@ -1,0 +1,48 @@
+.canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+  user-select: none;
+  
+  &__layer {}
+}
+
+.canvas-item {
+  user-select: none;
+  cursor: grab;
+  position: absolute;
+  // transition: all .2s ease;
+  box-sizing: content-box;
+
+  &__hover {
+    border: 3px solid #49e27c;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
+  }
+
+  &__object {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    &__image {
+      @include translate-50();
+      max-width: 100%;
+      max-height: 100%;
+    }
+    &__title {
+      @include translate-50();
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+// Will be used as an overlay to svgs to avoid the dragging bug in Safari
+.svgHack {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+}

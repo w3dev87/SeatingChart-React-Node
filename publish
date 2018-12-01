@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "*** publishing script for gowed.com.au/seating-chart ***"
+echo "Installing latest changes ..."
+
+git checkout master
+git pull
+
+rm -rf node_modules
+npm install
+
+echo "Building production script ..."
+
+npm run prod
+
+echo "Sync-ing with the public folder ..."
+rsync -r ./build/* /home/gowed/gowed_www/gowed.com.au/seating-chart
+
+echo "Production script is published."

@@ -1,0 +1,72 @@
+@import '../modules/colors';
+
+.canvas-item-editor {
+  // height: 65px;
+  background: $color-toolbar-bg;
+  z-index: 10;
+
+  &__editors {
+    // max-width: 980px;
+    padding: 24px 12px !important;
+    margin: 0 !important;
+    font-weight: 600;
+
+    .control-wrapper {
+      margin: auto 0;
+
+      span {
+        margin-right: 5px;
+      }
+
+      input {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__number-input, &__text-input, &__select {
+    width: 50px;
+    height: 33px;
+    padding: 0 0 0 10px;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  &__text-input {
+    width: 100px;
+  }
+
+  &__select {
+    width: 36px;
+    vertical-align: top;
+  }
+
+  .small-inp {
+    // height:1.2rem;
+    // font-size: 0.7rem;
+    // width: 30px;
+  }
+
+  &__sidebox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+  }
+  
+  &__sidebox-button {
+    width: 70px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.canvas-block {
+  display: table;
+  width: calc(100% + 20px);
+  margin-left: -10px;
+  margin-right: -10px;
+  border-spacing: 10px;
+}

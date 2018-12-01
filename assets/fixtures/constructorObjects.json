@@ -1,0 +1,104 @@
+[
+  {
+    "categoryName": "Seating",
+    "categoryId": "SEATING",
+    "items": [
+      {
+        "type": "1000",
+        "name": "Chair",
+        "itemWidth": 0.2,
+        "itemHeight": 0.2
+      }
+    ]
+  },
+  {
+    "categoryName": "Square Tables",
+    "categoryId": "SQUARE_TABLES",
+    "items": [
+      {
+        "type": "1001",
+        "name": "Square table 4",
+        "itemWidth": 1,
+        "itemHeight": 1,
+        "seats": {
+          "top": 1,
+          "bottom": 1,
+          "right": 1,
+          "left": 1
+        }
+      },
+      {
+        "type": "1002",
+        "name": "Square table 8",
+        "itemWidth": 1,
+        "itemHeight": 1,
+        "seats": {
+          "top": 2,
+          "bottom": 2,
+          "right": 2,
+          "left": 2
+        }
+      },
+      {
+        "type": "1003",
+        "name": "table only 4",
+        "itemWidth": 1,
+        "itemHeight": 1
+      }
+    ]
+  },
+  {
+    "categoryName": "Rectangle Tables",
+    "categoryId": "RECTANGLE_TABLES",
+    "items": [
+      {
+        "type": "1005",
+        "name": "Rectangle table 8",
+        "itemWidth": 3,
+        "itemHeight": 1,
+        "seats": {
+          "top": 3,
+          "bottom": 3,
+          "right": 1,
+          "left": 1
+        }
+      },
+      {
+        "type": "1006",
+        "name": "Rectangle table 12",
+        "itemWidth": 2,
+        "itemHeight": 1,
+        "seats": {
+          "top": 4,
+          "bottom": 4,
+          "right": 2,
+          "left": 2
+        }
+      }
+    ]
+  },
+  {
+    "categoryName": "Circular Tables",
+    "categoryId": "CIRCLE_TABLES",
+    "items": [
+      {
+        "type": "1007",
+        "name": "Circular Table Empty",
+        "itemWidth": 1,
+        "itemHeight": 1,
+        "seats": {
+          "all": 6
+        }
+      },
+      {
+        "type": "1008",
+        "name": "Circular Table 4",
+        "itemWidth": 1,
+        "itemHeight": 1,
+        "seats": {
+          "all": 6
+        }
+      }
+    ]
+  }
+]

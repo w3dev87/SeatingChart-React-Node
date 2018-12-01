@@ -1,0 +1,36 @@
+.floors {
+  margin-bottom: 30px;
+  border: 1px solid #fafafa;
+  
+  &__list {
+    margin-bottom: 20px;
+  }
+  
+  &__add {}
+}
+
+
+.floors-item {
+  display: block;
+  padding-right: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  margin-bottom: 10px;
+ 
+  &__title {
+    display: inline-block;
+    line-height: 30px;
+    cursor: pointer;
+    .is-active & {
+      font-weight: bold;
+    }
+  }
+  &__delete {
+    float: right;
+    margin-right: -30px;
+    width: 30px;
+    height: 30px;
+    color: $alert-color;
+  }
+}

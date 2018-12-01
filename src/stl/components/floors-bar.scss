@@ -1,0 +1,44 @@
+@import '../modules/colors';
+
+$bar-height: 30px;
+
+.floors-bar-container {
+  height: $bar-height;
+}
+
+.floors-bar {
+  height: 100%;
+  width: 100%;
+  background: $light-gray;
+}
+
+.floors-bar__delete {
+  width: 20px;
+  height: 20px;
+  color: $alert-color;
+}
+
+.floors-bar__item {
+  height: $bar-height;
+  padding: 5px;
+  font-size: 0.8rem;
+  display: inline-block;
+  cursor: pointer;
+  &:hover {
+    background: #a7a4a4;
+    font-weight:bold;
+  }
+  &.selected {
+    background: #868686;
+    color: white;
+  }
+}
+
+.floors-bar__new {
+  display: inline-block;
+  height: $bar-height;
+  padding: 5px;
+  background: #a7a4a4;
+  font-size: 0.8rem;
+  font-weight:bold;
+}
